@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--Font Awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="overflow: hidden;" class="main">
+    <!-- header section starts -->
+    <header class="header" data-aos="fade-down">
+        <section class="flex">
+            <a href="home.html" class="logo">TransFast</a>
+            <nav class="navbar">
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="destinations.html">Destination</a>
+                <a href="contact.html">Contact</a>
+                <a href="signin.html">Login</a>
+                <a href="signup.html">Sign Up</a>
+            </nav>
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </section>
+    </header>
+    <!-- header section ends -->
+    <!-- home section starts  -->
+    <div class="container home bg-transparent" data-aos="zoom-out" id="home">
+        <section class="flex py-0 my-0" data-aos="zoom-in" data-aos-delay="600">
+            <form action="" method="post" class="">
+                <h3>Book your Transportation</h3>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <p>From</p>
+                        <input type="text" name="location" required maxlength="50" placeholder="start location" class="box">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <p>Destination</p>
+                        <input type="text" name="location" required maxlength="50" placeholder="destination" class="box">
+                    </div>
+                </div>
+                <p>Date</p>
+                <input type="datetime-local" name="date" class="box" required>
+                <p>How many</p>
+                <input type="number" name="guests" min="1" max="10" maxlength="2" placeholder="Number of seats" required class="box">
+                <p>Transport Type</p>
+                <select name="selectTaxi" class="box">
+                    <option value="">Type of transport</option>
+                    <option value="car">Car</option>
+                    <option value="suv">SUV</option>
+                    <option value="van">Van</option>
+                    <option value="minibus">Minibus</option>
+                </select>
+                <input type="Submit" value="Book" class="btn">
+                 
+            </form>
+        </section>
+    </div>
+    <!-- home section ends -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- custom js file link  -->
+    <script src="javascript/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+</body>
+</html>
